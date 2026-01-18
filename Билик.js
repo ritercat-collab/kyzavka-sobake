@@ -1,6 +1,6 @@
 const API_KEY = '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';
 const BASE_URL = 'https://openrouter.ai/api/v1'; 
-const MODEL = 'x-ai/grok-4.1-fast'; 
+const MODEL = 'xiaomi/mimo-v2-flash:free'; 
 
 let messagesHistory = [
   { role: 'system', content: 'Ты умный школьный помощник. Отвечай по-русски, просто, понятно, с примерами. Помогай с учёбой (математика, русский, история и т.д.) и жизнью (мотивация, планирование).' }
@@ -69,4 +69,5 @@ function addMessage(sender, text, extraClass = '') {
 function quickAsk(question) {
   document.getElementById('user-input').value = question;
   sendMessage();
+
 }
